@@ -1,4 +1,4 @@
 [submodule "pwa-server"]
 	path = pwa-server
-	url = https://github.com/xerik25/pwa-server.git
-	branch = feature/issue_#2
+	url = git@github.com:xerik25/pwa-server.git
+	branch = feature/issue2
