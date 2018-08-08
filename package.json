@@ -9,6 +9,8 @@
     "start:server": "cd ./pwa-server/ && yarn && yarn run start",
     "start:client": "cd ./pwa-client/ && yarn && yarn run start",
     "prod": "npm-run-all --sequential start:server build:client-prod",
+    "dev:server": "cd ./pwa-server/ && yarn run dev",
+    "dev": "npm-run-all --parallel dev:server start:client",
     "start": "npm-run-all --parallel start:server start:client"
   },
   "dependencies": {
