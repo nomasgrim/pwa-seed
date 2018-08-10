@@ -1,0 +1,8 @@
+[submodule "pwa-server"]
+	path = pwa-server
+	url = git@github.com:xerik25/pwa-server.git
+	branch = feature/issue2
+[submodule "pwa-client"]
+	path = pwa-client
+	url = git@github.com:xerik25/pwa-client.git
+	branch = feature/issue2
