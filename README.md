@@ -20,7 +20,7 @@ yarn
 
 ### Run Dev
 ```ssh
-yarn run Dev
+yarn run dev
 ```
 
 ### Hope for the best
