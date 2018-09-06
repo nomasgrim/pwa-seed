@@ -7,6 +7,10 @@ git clone git@github.com:nomasgrim/pwa-seed.git
 ```ssh
 cd pwa-seed
 ```
+### sync submodules
+```ssh
+git submodule update --init --remote
+```
 
 ### Create .env
 ```ssh
