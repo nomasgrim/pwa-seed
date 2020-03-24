@@ -1,0 +1,22 @@
+{
+  "name": "pwa-seed",
+  "version": "0.0.1",
+  "description": "PWA Seed for quick setup with websockets, routes, apis requests with web-services and client side application with react",
+  "scripts": {
+    "build:client-prod": "cd ./pwa-client/ && yarn && yarn run build",
+    "postbuild:client-prod": "yarn run copy:client-prod",
+    "copy:client-prod": "cpx \"./pwa-client/build/**/*\" ./src/dist",
+    "start:server": "cd ./pwa-server/ && yarn && yarn run start",
+    "start:client": "cd ./pwa-client/ && yarn && yarn run start",
+    "prod": "npm-run-all --sequential start:server build:client-prod",
+    "dev:server": "cd ./pwa-server/ && yarn &&  yarn run dev",
+    "dev": "npm-run-all --parallel dev:server start:client",
+    "start": "npm-run-all --parallel start:server start:client"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}
